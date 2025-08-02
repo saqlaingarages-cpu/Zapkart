@@ -1,0 +1,15 @@
+{
+  "name": "zapkart",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.6",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.7.0"
+  }
+}
