@@ -1,0 +1,10 @@
+function Header() {
+  return (
+    <header className="bg-white shadow p-4 flex justify-between items-center">
+      <h1 className="text-xl font-bold text-green-600">ZapKart</h1>
+      <button className="bg-green-500 text-white px-4 py-1 rounded">Cart</button>
+    </header>
+  );
+}
+
+export default Header;
