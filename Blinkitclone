@@ -1,0 +1,10 @@
+blinkit-clone/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.js
+├── index.html
+├── styles.css
+└── package.json
