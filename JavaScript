@@ -1,0 +1,48 @@
+const app = document.getElementById("app");
+
+const products = [
+  {
+    id: 1,
+    name: "Parle-G Biscuit",
+    image: "public/images/parle-g.jpg",
+    price: "₹10"
+  },
+  {
+    id: 2,
+    name: "Amul Milk 500ml",
+    image: "public/images/amul-milk.jpg",
+    price: "₹26"
+  },
+  {
+    id: 3,
+    name: "Colgate Toothpaste",
+    image: "public/images/colgate.jpg",
+    price: "₹52"
+  }
+];
+
+const renderProducts = () => {
+  let html = `
+    <div class="header">
+      <h1>ZapKart</h1>
+    </div>
+    <div class="product-grid">
+  `;
+
+  products.forEach((product) => {
+    html += `
+      <div class="product-card">
+        <img src="${product.image}" width="100%" />
+        <h3>${product.name}</h3>
+        <p>${product.price}</p>
+        <button>Add to Cart</button>
+      </div>
+    `;
+  });
+
+  html += "</div>";
+
+  app.innerHTML = html;
+};
+
+renderProducts();
